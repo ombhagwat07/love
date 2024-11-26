@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Letter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Package Container -->
+  <div class="package-container">
+    <div class="package" onclick="showQuestions()">
+      <div class="ribbon"></div>
+      <p>Click to Open</p>
+    </div>
+  </div>
+
+  <!-- Questions Container -->
+  <div class="questions-container hidden" id="questionsContainer">
+    <div class="questions">
+      <h2>Answer These Questions to Open the Letter</h2>
+      <form id="quizForm">
+        <p>1. What is the date of our anniversary?</p>
+        <label><input type="radio" name="q1" value="21 March"> 21 March</label><br>
+        <label><input type="radio" name="q1" value="28 April"> 28 April</label><br>
+        <label><input type="radio" name="q1" value="10 April"> 10 April</label><br>
+        <label><input type="radio" name="q1" value="31 March"> 31 March</label><br>
+
+        <p>2. What was the first gift I gave to you?</p>
+        <label><input type="radio" name="q2" value="Shoes"> Shoes</label><br>
+        <label><input type="radio" name="q2" value="Earbuds"> Earbuds</label><br>
+        <label><input type="radio" name="q2" value="Diary"> Diary</label><br>
+        <label><input type="radio" name="q2" value="Ring"> Ring</label><br>
+
+        <p>3. How much do I love you?</p>
+        <label><input type="radio" name="q3" value="72%"> 72%</label><br>
+        <label><input type="radio" name="q3" value="50%"> 50%</label><br>
+        <label><input type="radio" name="q3" value="100%"> 100%</label><br>
+        <label><input type="radio" name="q3" value="Beyond your imagination"> Beyond your imagination</label><br>
+
+        <button type="button" onclick="checkAnswers()">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Letter Container -->
+  <div class="letter-container hidden" id="letterContainer">
+    <div class="letter">
+      <h1>My Love Letter</h1>
+      <p>Dear Rucha,</p>
+      <p>
+        From the moment I saw you, my world became brighter. Your smile is the light that guides me,
+        and your presence is the warmth that fills my heart. You are my inspiration, my joy, and my everything.
+      </p>
+      <p>With love,</p>
+      <p>your handsome,sweet,great bf: Buggy.</p>
+      <button onclick="closeLetter()">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
